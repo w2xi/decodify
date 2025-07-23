@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base64 Decoder</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .logo {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 8px;
+    }
+    
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a73e8;
+      margin: 0;
+    }
+    
+    .version {
+      font-size: 12px;
+      color: #666;
+      margin: 4px 0 0 0;
+    }
+    
+    .content {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .feature-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+    }
+    
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+    
+    .feature-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      color: #4CAF50;
+    }
+    
+    .stats {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #666;
+    }
+    
+    .refresh-btn {
+      background: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      margin-top: 12px;
+      width: 100%;
+    }
+    
+    .refresh-btn:hover {
+      background: #1557b0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icon/logo.png" alt="Logo" class="logo">
+    <h1 class="title">Base64 Decoder</h1>
+    <p class="version">v1.0.0</p>
+  </div>
+  
+  <div class="content">
+    <ul class="feature-list">
+      <li>
+        <span class="feature-icon">✓</span>
+        自动检测页面中的Base64文本
+      </li>
+      <li>
+        <span class="feature-icon">✓</span>
+        实时解码并显示结果
+      </li>
+      <li>
+        <span class="feature-icon">✓</span>
+        点击解码结果即可复制
+      </li>
+      <li>
+        <span class="feature-icon">✓</span>
+        支持动态内容检测
+      </li>
+    </ul>
+    
+    <div class="stats">
+      <div id="stats-content">当前页面已检测到 <span id="decoded-count">0</span> 个Base64文本</div>
+    </div>
+    
+    <button class="refresh-btn" id="refresh-btn">重新扫描页面</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 

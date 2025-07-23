@@ -1,0 +1,53 @@
+.__base64-decoder-container__ {
+  font-family: 'Courier New', monospace;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  max-width: 300px;
+  border-radius: 4px;
+  padding: 2px 6px;
+  transition: all 0.2s ease;
+  word-break: break-all;
+  cursor: pointer;
+  
+  /* 视觉区分样式 */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  color: #495057;
+  font-size: 0.9em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  
+  /* 添加小图标指示这是解码结果 */
+  position: relative;
+}
+
+.__base64-decoder-container__::before {
+  content: "🔓";
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  margin-right: 4px;
+  opacity: 0.7;
+}
+
+.__base64-decoder-container__:hover {
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-color: #adb5bd;
+}
+
+.__base64-decoder-container__:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .__base64-decoder-container__ {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+    max-width: 100%;
+    font-size: 0.85em;
+  }
+}
