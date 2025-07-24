@@ -1,11 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Base64 Decoder",
-  "version": "1.0.0",
+  "name": "Decodify",
+  "version": "0.0.1",
   "description": "自动检测并解码页面中的Base64编码文本",
   "permissions": [
-    "activeTab",
-    "storage"
+    "activeTab"
   ],
   "content_scripts": [
     {
@@ -18,14 +17,14 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon/logo.png",
-      "48": "icon/logo.png",
-      "128": "icon/logo.png"
+      "16": "icon/logo16.png",
+      "48": "icon/logo48.png",
+      "128": "icon/logo128.png"
     }
   },
   "icons": {
-    "16": "icon/logo.png",
-    "48": "icon/logo.png",
-    "128": "icon/logo.png"
+    "16": "icon/logo16.png",
+    "48": "icon/logo48.png",
+    "128": "icon/logo128.png"
   }
 } 
