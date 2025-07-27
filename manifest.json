@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Decodify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "自动检测并解码页面中的Base64编码文本",
   "permissions": [
     "activeTab"
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://*.v2ex.com/*"],
       "js": ["content.js"],
       "css": ["styles.css"],
       "run_at": "document_end"
