@@ -4,7 +4,7 @@
 
 # Decodify
 
-*一个自动解码页面 Base64 的 Chrome 浏览器插件，让编码转换更简单* ✨
+*一个自动解码页面 Base64 的 Chrome 浏览器插件，可见即可得* ✨
 
 </div>
 
